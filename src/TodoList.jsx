@@ -15,7 +15,7 @@ const TodoList = () => {
   };
 
   return (
-    <ul className="mt-10 bg-slate-600 text-slate-100 font-semibold rounded-md p-4 space-y-3 capitalize">
+    <ul className="w-11/12 md:w-full mx-auto mt-10 bg-slate-600 text-slate-100 font-semibold rounded-md p-4 space-y-3 capitalize">
       {tasks.map((task) => (
         <li key={task.id}>
           {editTaskId === task.id ? (

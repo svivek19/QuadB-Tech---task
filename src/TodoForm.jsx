@@ -15,7 +15,7 @@ const TodoForm = () => {
   };
 
   return (
-    <>
+    <div className="w-11/12 md:w-full mx-auto">
       <h1 className="text-center text-white text-2xl mb-10 font-semibold">
         To-Do App
       </h1>
@@ -29,12 +29,12 @@ const TodoForm = () => {
         />
         <button
           type="submit"
-          className="bg-sky-600 py-3 px-5 font-semibold hover:bg-sky-700 transition-all text-white rounded-md"
+          className="bg-sky-600 my-3 md:my-0 py-3 px-5 font-semibold hover:bg-sky-700 transition-all text-white rounded-md"
         >
           Add Task
         </button>
       </form>
-    </>
+    </div>
   );
 };
 
