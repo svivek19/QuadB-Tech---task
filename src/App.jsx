@@ -1,14 +1,14 @@
 import React from "react";
-import "./App.css";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 
 function App() {
   return (
-    <div className="App">
-      <h1>To-Do List</h1>
-      <TodoForm />
-      <TodoList />
+    <div className="flex justify-center items-center h-screen bg-slate-800">
+      <div className="flex flex-col">
+        <TodoForm />
+        <TodoList />
+      </div>
     </div>
   );
 }

@@ -15,15 +15,26 @@ const TodoForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Add new task"
-        value={taskName}
-        onChange={(e) => setTaskName(e.target.value)}
-      />
-      <button type="submit">Add Task</button>
-    </form>
+    <>
+      <h1 className="text-center text-white text-2xl mb-10 font-semibold">
+        To-Do App
+      </h1>
+      <form onSubmit={handleSubmit} className="space-x-2">
+        <input
+          type="text"
+          placeholder="Add new task"
+          className="bg-gray-600 py-3 px-6 rounded-md font-semibold text-lg outline-none text-white capitalize"
+          value={taskName}
+          onChange={(e) => setTaskName(e.target.value)}
+        />
+        <button
+          type="submit"
+          className="bg-sky-600 py-3 px-5 font-semibold hover:bg-sky-700 transition-all text-white rounded-md"
+        >
+          Add Task
+        </button>
+      </form>
+    </>
   );
 };
 
